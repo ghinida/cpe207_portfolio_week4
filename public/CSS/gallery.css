@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+  }
+.G_container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+  
+.G_container img {vertical-align: middle;}
+
+.G_container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}

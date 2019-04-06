@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <!-- Page Navigator -->
+    <div class="sidenav">
+        <a href="home.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="ref.html">Ref & Credits</a>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <img src="Images/banner.jpg" alt="banner" style="width:100%;">
+            <div class="centered">
+                <h1>~ C O N T A C T ~</h1>
+            </div>
+        </div>
+        <form action="" id="contactf">
+            <table width="80%" align="center"
+                style="padding: 10px; border: 1px solid white; background-image: url('Images/Form.png'); background-size: 100% 100%;">
+                <tbody>
+                    <div class="emsg"></div>
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>SUBJECT : </label></h3>
+                        </td>
+                        <td>
+                            <input type="text" name="subject" value width="50px" id="subj">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>Massage : </label></h3>
+                        </td>
+                        <td>
+                            <textarea name="msg" cols="75" rows="10" id="msgs"></textarea>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>Name : </label></h3>
+                        </td>
+                        <td>
+                            <input type="text" name="name" value id="cname">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>Gender : </label></h3>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male" id="gendm"> Male
+                            <input type="radio" name="gender" value="female" id="gendf"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>Phone : </label></h3>
+                        </td>
+                        <td>
+                            <input type="tel" name="phone" value id="phone">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="myHeadText" style="font-size: 150%">
+                            <h3><label>Email : </label></h3>
+                        </td>
+                        <td>
+                            <input type="text" name="email" value id="email">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="Submit" value="submit">
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+        
+
+        <ul id="lcontact" style='text-align: left; font-size: 150%; margin-left: 10%;'>
+
+        </ul>
+    </div>
+
+    <script src="Scripts/contact.js"></script>
+</body>
+
+</html>

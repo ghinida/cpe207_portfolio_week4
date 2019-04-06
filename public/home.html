@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peerawich's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+
+    <!-- Page Navigator -->
+    <div class="sidenav">
+        <a href="home.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="ref.html">Ref & Credits</a>
+    </div>
+
+    <!-- Main : Homepage -->
+    <div class="main">
+        <table align="center" width=80%>
+            <tr>
+                <td>
+                    <img src="Images/profile_pic.png" alt="Peerawich Dinprapa">
+                </td>
+                <td id="fStyle">
+                    <h1>Peerawich Dinprapa</h1>
+                    <div>CPE Student</div>
+                    <div>Tel. 087-575-6651</div>
+                    <div>E-mail : <a href="peerawich.dinp@gmail.com">peerawich.dinp@gmail.com</a></div>
+                </td>
+            </tr>
+        </table>
+
+        <button class="accordion">Profile</button>
+        <div class="panel">
+            <p> A 2nd year CPE Student (2018). Interested in Game Development , Illustration , Writting.</p>
+        </div>
+
+        <button class="accordion">Skills</button>
+        <div class="panel">
+            <ul>
+                <li><b>C/C++/C# Programing</b></li>
+                <p><i>Can do most of basics and some of advanced programings.</i></p>
+                <li><b>Game Designer</b></li>
+                <p><i>Can come up with many ideas for games.</i></p>
+                <li><b>Game Illustrator</b></li>
+                <p><i>Can do some characters' designs.</i></p>
+            </ul>
+        </div>
+
+        <button class="accordion">Technical</button>
+        <div class="panel">
+            <ul>
+                <li><b>C Programing</b></li>
+                <li><b>C++ Programing</b></li>
+                <li><b>C# Programing</b></li>
+                <li><b>Unity</b></li>
+                <li><b>Game Maker Studio</b></li>
+            </ul>
+        </div>
+
+        <button class="accordion">Experience</button>
+        <div class="panel">
+            <p>No experience in any works yet.</p>
+        </div>
+
+        <button class="accordion">Education</button>
+        <div class="panel">
+            <ul>
+                <li>Graduated from <b>Bunyawat witthayalai School.</b>(M.1-M.6)</li>
+                <li>Now studying <b><i>Computer Engineering</i></b> at <b>Chiangmai
+                        University</b></li>
+            </ul>
+        </div>
+
+        <!-- Script for accordion -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
