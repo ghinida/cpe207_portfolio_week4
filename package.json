@@ -7,10 +7,17 @@
     "start": "node App.js",
     "dev": "nodemon App.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghinida/cpe207_portfolio_week4"
+  },
   "author": "Peerawich Dinprapa",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^7.0.0",
     "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "10.15.3"
   }
 }

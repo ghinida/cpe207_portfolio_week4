@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+
 const server = http.createServer((req, res) => {
     let filePath = path.join(
         __dirname,
@@ -29,6 +30,8 @@ const server = http.createServer((req, res) => {
             break;
     }
     if (contentType == "text/html" && extname == "") filePath += ".html";
+
+    console.log(filePath);
 
     fs.readFile(filePath, (err, content) => {
         if (err) {
